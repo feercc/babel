@@ -57,7 +57,7 @@ square("2"); // Error!
   
 - TS：将文件名从.js变成.ts，需要有类型覆盖，不然不起作用。类型覆盖就是需要给变量写上n: number
 
-###### <center>两者覆盖率差异图</center>
+<h6 align='center'>两者覆盖率差异图</h6>
 
 ![Flow和TS比较](./images/adopting-flow-and-typescript-graph.png "这是一张两者差异图")
 
