@@ -1,8 +1,34 @@
-import { defineUserConfig } from 'vuepress'
+import { defaultTheme, defineUserConfig } from 'vuepress'
+import { sidebar } from './configs/index'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  title: 'babel中文说明文档 ！',
-  description: '这里是最新的babel中文说明文档，并结合相关事例',
+  title: '深入浅出babel',
+  description: 'babel中文，教程文档，手写babel插件',
   base: '/babel/',
+  head: [
+    ['link', { rel: 'icon', href: '/images/favicon.png' }]
+  ],
+  theme: defaultTheme({
+    sidebar,
+    repo: 'https://github.com/feericu/babel',
+    editLinkText: '在 GitHub 上编辑此页',
+    lastUpdatedText: '上次更新',
+    contributors: false,
+    contributorsText: '贡献者',
+    tip: '提示',
+    warning: '注意',
+    danger: '警告',
+    notFound: [
+      '这里什么都没有',
+      '我们怎么到这来了？',
+      '这是一个 404 页面',
+      '看起来我们进入了错误的链接',
+    ],
+    backToHome: '返回首页',
+    // a11y
+    openInNewWindow: '在新窗口打开',
+    toggleColorMode: '切换颜色模式',
+    toggleSidebar: '切换侧边栏',
+  })
 })
