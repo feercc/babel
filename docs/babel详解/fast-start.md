@@ -147,12 +147,12 @@ array.includes(function (item) {
 
 语法很轻松的转好，但是api不做处理，这样低版本浏览器还是会报错，所以需要polyfill，而useBuiltIns: "usage"就是表示按需引入
 
-polyfill中存在的两个问题
+但是@babel/polyfill中存在的两个问题
 
 1. 一些实例方法，直接在Array.prototype上添加，修改了全局变量的原型，别的库也修改的话容易造成冲突
 2. babel 转译 syntax 时，会用一些辅助函数，辅助函数在每个文件都会写入，没有合理做好公共引入
 
-@babel/plugin-transform-runtime就是解决这种问题
+@babel/plugin-transform-runtime就是解决这种问题，它可以让你防止对全局作用域产生影响
 
 其中
 
