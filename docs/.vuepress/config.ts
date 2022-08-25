@@ -1,4 +1,7 @@
 import { defaultTheme, defineUserConfig } from 'vuepress'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { sidebar } from './configs/index'
 
 export default defineUserConfig({
@@ -12,6 +15,10 @@ export default defineUserConfig({
   theme: defaultTheme({
     sidebar,
     repo: 'https://github.com/feericu/babel',
+    docsRepo: 'https://github.com/feericu/babel',
+    docsBranch: 'main',
+    docsDir: 'docs',
+    editLinkPattern: ':repo/edit/:branch/:path',
     editLinkText: '在 GitHub 上编辑此页',
     lastUpdatedText: '上次更新',
     contributors: false,
@@ -30,5 +37,18 @@ export default defineUserConfig({
     openInNewWindow: '在新窗口打开',
     toggleColorMode: '切换颜色模式',
     toggleSidebar: '切换侧边栏',
-  })
+  }),
+  plugins: [
+    // backToTopPlugin(),
+    // docsearchPlugin({
+    //   // 配置
+    //   apiKey: '1',
+    //   indexName: 'babel中文',
+    //   appId: '2',
+    //   placeholder: '搜索文档'
+    // })
+    // googleAnalyticsPlugin({
+    //   // 配置项
+    // })
+  ]
 })
