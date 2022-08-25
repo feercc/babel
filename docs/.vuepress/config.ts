@@ -39,7 +39,7 @@ export default defineUserConfig({
     toggleSidebar: '切换侧边栏',
   }),
   plugins: [
-    // backToTopPlugin(),
+    backToTopPlugin(),
     // docsearchPlugin({
     //   // 配置
     //   apiKey: '1',
@@ -47,8 +47,9 @@ export default defineUserConfig({
     //   appId: '2',
     //   placeholder: '搜索文档'
     // })
-    // googleAnalyticsPlugin({
-    //   // 配置项
-    // })
+    googleAnalyticsPlugin({
+      // 配置项
+      id: 'G-Q6MTFEY5YY'
+    })
   ]
 })
