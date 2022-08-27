@@ -40,13 +40,13 @@ export default defineUserConfig({
   }),
   plugins: [
     backToTopPlugin(),
-    // docsearchPlugin({
-    //   // 配置
-    //   apiKey: '1',
-    //   indexName: 'babel中文',
-    //   appId: '2',
-    //   placeholder: '搜索文档'
-    // })
+    docsearchPlugin({
+      // 配置
+      apiKey: '82a1fe9de8233bc285d11f8375fd30a0',
+      indexName: 'feer',
+      appId: 'WMX9Z93J50',
+      placeholder: '搜索文档'
+    }),
     googleAnalyticsPlugin({
       // 配置项
       id: 'G-Q6MTFEY5YY'
