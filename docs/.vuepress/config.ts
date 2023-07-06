@@ -14,8 +14,8 @@ export default defineUserConfig({
   ],
   theme: defaultTheme({
     sidebar,
-    repo: 'https://github.com/feericu/babel',
-    docsRepo: 'https://github.com/feericu/babel',
+    repo: 'https://github.com/feercc/babel',
+    docsRepo: 'https://github.com/feercc/babel',
     docsBranch: 'main',
     docsDir: 'docs',
     editLinkPattern: ':repo/edit/:branch/:path',
