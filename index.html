@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress [object Promise]">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/images/favicon.png"><title>Home | 深入浅出babel</title><meta name="description" content="babel中文，教程文档，手写babel插件">
+    <link rel="modulepreload" href="/babel/assets/index.html.4f97b57f.js"><link rel="modulepreload" href="/babel/assets/index.html.db3cfa06.js"><link rel="prefetch" href="/babel/assets/conclusion.html.5f802f1e.js"><link rel="prefetch" href="/babel/assets/configuration.html.8fe7002d.js"><link rel="prefetch" href="/babel/assets/fast-start.html.4b08d940.js"><link rel="prefetch" href="/babel/assets/guide.html.d921da9d.js"><link rel="prefetch" href="/babel/assets/plugins.html.782584ed.js"><link rel="prefetch" href="/babel/assets/update7.html.477e85a1.js"><link rel="prefetch" href="/babel/assets/404.html.265028f6.js"><link rel="prefetch" href="/babel/assets/conclusion.html.57c33dee.js"><link rel="prefetch" href="/babel/assets/configuration.html.f1cc4835.js"><link rel="prefetch" href="/babel/assets/fast-start.html.786628ed.js"><link rel="prefetch" href="/babel/assets/guide.html.fccf73e0.js"><link rel="prefetch" href="/babel/assets/plugins.html.696a6c10.js"><link rel="prefetch" href="/babel/assets/update7.html.e84ef3e5.js"><link rel="prefetch" href="/babel/assets/404.html.10352567.js"><link rel="prefetch" href="/babel/assets/404.887f1439.js"><link rel="prefetch" href="/babel/assets/Layout.91dfcb54.js">
+    <link rel="stylesheet" href="/babel/assets/style.ece6fc12.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container no-sidebar"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="切换侧边栏" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a aria-current="page" href="/babel/" class="router-link-active router-link-exact-active"><!----><span class="site-name">深入浅出babel</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a class="external-link" href="https://github.com/feercc/babel" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">在新窗口打开</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="切换颜色模式"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><div id="docsearch-container"></div></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a class="external-link" href="https://github.com/feercc/babel" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">在新窗口打开</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="home"><header class="hero"><img src="/babel/images/babel.webp" alt="深入浅出babel"><h1 id="main-title">深入浅出babel</h1><p class="description">babel中文，教程文档，手写babel插件</p><p class="actions"><!--[--><a href="/babel/babel详解/guide.html" class="action-button primary" aria-label="开始学习"><!--[--><!--]--> 开始学习 <!--[--><!--]--></a><!--]--></p></header><div class="features"><!--[--><div class="feature"><h2>零基础</h2><p>通过这个教程你能够从0到1完整的了解到babel流程，整个过程会详细的讲述babel相关内容和配置</p></div><div class="feature"><h2>深入了解</h2><p>除了简易教程，中间还穿插的手写babel插件等，让你深入了解babel流程，以及语法树等相关</p></div><div class="feature"><h2>长期更新</h2><p>不断跟随新版本，迭代更新对应文档。紧跟版本迭代，官网修复等。记录babel等坑以及周边相关</p></div><!--]--></div><div class="theme-default-content"><div></div></div><!--[--><div class="footer">MIT Licensed | Copyright © 2022-present feer.icu</div><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/babel/app.f8165656.mjs" defer></script>
+  </body>
+</html>
